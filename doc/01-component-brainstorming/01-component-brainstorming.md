@@ -100,8 +100,9 @@ Hello, I am JD Ojeda. I am an aspiring software developer (I think) and I enjoy
 investing, mathematics, and the theory behind software. Currently, I am enjoying
 my foundations class the most in terms of material and because of this, I am thinking of
 implementing something that I am interested in from foundations. As of now, I am leaning towards
-graphs as they align with my love for math and programming. I also see a lot of
-real life application that I can achieve by having a more sophisticated understanding of graphs.
+something like sorting algorithms (we havent done much with this topic but it would be a nice start) or graphs as they both align with my love for math and programming. I also see a lot of
+real life application that I can achieve by having a more sophisticated understanding of sorting
+algorithms or by having a more firm understanding of graphs. 95% confident I want to do graphs,
 I see it all the time, "Facebook clone," "WhatsApp clone," and a whole bunch of other
 social media clones that apparently look good to employers. I enjoy the occasional
 TikTok or instagram reel, and understanding a major component that is under the hood
@@ -125,8 +126,6 @@ that may help you in your brainstorming. All of these components were made at
 some point by one of your peers, so you should feel confident that you can
 accomplish any of them.
 
-<!-- TODO: browse the list of possible projects then delete this comment -->
-
 There is no requirement that you use any of the components listed above.
 If you want to model something else, go for it! Very common early object
 projects usually attempt to model real-world systems like banks, cars,
@@ -134,8 +133,6 @@ etc. Make of this whatever seems interesting to you, and keep in mind that
 you're just brainstorming right now. You do not have to commit to anything.
 
 ### Example Component
-
-<!-- TODO: review this example component then delete this comment -->
 
 To help you brainstorm a few components, we've provided an example below of a
 component you already know well: NaturalNumber. We highly recommend that you
@@ -203,70 +200,93 @@ will likely refine your design to make your implementation easier to use.
 
 > Please use this section to share your designs.
 
-- Component Design #1: <!-- TODO: give component a name then delete this comment -->
+- Component Design #1: Graph Traversal
 
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - Mutable graph, i.e. graph nodes and graph edges can be added. The graph will be
+      be able to dynamically change the ways that the data is represented.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - addNode<T node>
+    - removeNode<T node>
+    - addEdge<T fromNode, T toNode>
+    - removeEdge<T fromNode, T toNode>
+    - size()
+    - containsNode<T node>
+    - containsEdge<T fromNode, T toNode>
+    - getNeighbors<T node>
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - DFS()
+    - BFS()
+    - shortestPath<T fromNode, T toNode>
+    - detectCycle()
+    - isConnected()
+    - findAllPaths(T fromNode, T toNode)
   - **Additional Considerations** (_note_: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes. Nodes can be added and removed as necessary.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, edge information should probably be stored well and in a Map it could be easier to store weights but I don't want to make it more complex than it already is. Just thinking.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Enums can be used to represent if the graph is directed or undirected.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, using the getNeighbors method I think I can find the adjecent nodes of a selected node to
+        implement BFS.
 
-- Component Design #2: <!-- TODO: give component a name then delete this comment -->
+- Component Design #2: Natural Number for doubles
 
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - Increasing the number of digits for doubles and increasing the precision of the
+      numbers.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - Same as NN I would think?
+    - precision() // similar to c++ precision
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - Same as NN I would think?
   - **Additional Considerations** (_note_: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes. The numbers can be changed into different numbers (I spoke with Dr. Carpenter and he said it would be an interesting idea)
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Sequences
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I dont think so
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, I think using the kernel methods, I can implement the secondary, using multiplyBy10
+        could be used to accurately append the correct number digits with the right amount of precision.
 
-- Component Design #3: <!-- TODO: give component a name then delete this comment -->
+- Component Design #3: Sorting algorithm visualizer
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - Models the sorting of a list of numbers using different sorting algorithms
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - sort(int[] array)
+    - quicksort(int[] array, int left, int right)
+    - mergeSort(int[] array)
+    - swap(int[] array, int i, int j)
+    - isSorted(int[] array)
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - visualizeSort (some method to visualize the sorting)
+    - compareSort (some method to compare the efficiencies of the various sorting methods)
+    - visualizeComparison (some method to visualize the comparison)
   - **Additional Considerations** (_note_: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, the algorithms will modify the arrays to match particular orders (I am thinking low to high or vice versa)
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I dont know
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - defining the sorting algorithms may be placed here?
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - in order to visualize anything, the kernels must work and the visualizations can only be implemented by the kernel methods.
 
 ## Post-Assignment
 
@@ -274,8 +294,6 @@ The following sections detail everything that you should do once you've
 completed the assignment.
 
 ### Changelog
-
-<!-- TODO: create CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -314,8 +332,6 @@ of development.
 
 ### Submission
 
-<!-- TODO: read the submission instructions then delete this comment -->
-
 If you have completed the assignment using this template, we recommend that
 you convert it to a PDF before submission. If you're not sure how, check out
 this [Markdown to PDF guide][markdown-to-pdf-guide]. However, PDFs should be
@@ -324,11 +340,7 @@ all your work is there before submitting. For future assignments, you will
 just be submitting a link to a pull request. This will be the only time
 you have to submit any PDFs.
 
-<!-- TODO: upload a PDF of this document and the CHANGELOG to Carmen then delete this comment -->
-
 ### Peer Review
-
-<!-- TODO: review the peer review guidelines then delete this comment -->
 
 Following the completion of this assignment, you will be assigned three
 students' component brainstorming assignments for review. Your job during the
