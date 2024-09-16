@@ -1,12 +1,10 @@
 # Portfolio Part 1: Component Brainstorming
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
-- **Due Date**: <!-- TODO: fill with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
+- **Name**: JD Ojeda<!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
+- **Dot Number**: ojeda.16<!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
+- **Due Date**: 9/16 @ 12:40 PM EST<!-- TODO: fill with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
 
 ## Assignment Overview
-
-<!-- TODO: read the assignment overview then delete this comment -->
 
 The overall goal of the portfolio project is to have you design and implement
 your own OSU component. There are no limits to what you choose to design and
@@ -29,8 +27,6 @@ implement.
 
 ## Assignment Checklist
 
-<!-- TODO: browse the checklist then delete this comment -->
-
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
 opening the TODOs window from the sidebar. The icon looks like a tree and will
@@ -52,8 +48,6 @@ to the tree diagram (you may remove this one as well):
 
 ## Assignment Learning Objectives
 
-<!-- TODO: read the assignment learning objectives then delete this comment -->
-
 Without learning objectives, there really is no clear reason why a particular
 assessment or activity exists. Therefore, to be completely transparent, here is
 what we're hoping you will learn through this particular aspect of the portfolio
@@ -67,12 +61,10 @@ project. Specifically, students should be able to:
 
 ## Assignment Rubric: 10 Points
 
-<!-- TODO: read the assignment rubric then delete this comment -->
-
 Again, to be completely transparent, most of the portfolio project, except the
 final submission, is designed as a formative assessment. Formative assessments
 are meant to provide ongoing feedback in the learning process. Therefore,
-the rubric is designed to assess the learning objectives *directly* in a way
+the rubric is designed to assess the learning objectives _directly_ in a way
 that is low stakes—meaning you shouldn't have to worry about the grade. Just
 do good work.
 
@@ -104,9 +96,28 @@ the magnifying glass icon in the upper-right corner or pressing CTRL+K and
 then V. This kind of button combination is called a chord, for whatever
 reason -->
 
-## Assignment
+Hello, I am JD Ojeda. I am an aspiring software developer (I think) and I enjoy
+investing, mathematics, and the theory behind software. Currently, I am enjoying
+my foundations class the most in terms of material and because of this, I am thinking of
+implementing something that I am interested in from foundations. As of now, I am leaning towards
+graphs as they align with my love for math and programming. I also see a lot of
+real life application that I can achieve by having a more sophisticated understanding of graphs.
+I see it all the time, "Facebook clone," "WhatsApp clone," and a whole bunch of other
+social media clones that apparently look good to employers. I enjoy the occasional
+TikTok or instagram reel, and understanding a major component that is under the hood
+sounds very appealing to me. TOTAL CHANGE OF SUBJECT, I also have a dog and I love him very much.
+I named him, Archer and he is a pure bred Husky. I named him after my favorite show (at the time).
+My favorite show now would be supernatural but I don't watch shows all that much anymore, and
+rather watch streamers on Twitch such as Tyler1, PirateSoftware, and moistcr1tikal.
+Lastly, I enjoy spending time with my family and with my girlfriend. I think it is important
+to have people that support you, especially when pursuing anything tech as it is
+becoming more and more competetive and thus stressful.
 
-<!-- TODO: read the assignment section then delete this comment -->
+<div style="text-align: center;">
+<img src="/Users/ojeda/Desktop/software/Java Component/portfolio-project/746E5319-B5B9-484A-95A7-EDF18E54409F.jpeg" alt="pic with gf" width="422" height="788.1" style="center">
+</div>
+
+## Assignment
 
 As previously stated, you are tasked with brainstorming 3 possible components.
 To aid you in this process, we have provided [some example components][example-components]
@@ -149,7 +160,7 @@ format, we can be more confident that your designs will be possible.
     - `NaturalNumber divide(NaturalNumber n)`: divides `this` by `n`, returning
       the remainder
     - ...
-  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+  - **Additional Considerations** (_note_: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
       - Yes, basically all OSU components have to be mutable as long as they
@@ -157,11 +168,11 @@ format, we can be more confident that your designs will be possible.
         mutate `this`.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-        - No. All methods work with integers or other NaturalNumbers.
+      - No. All methods work with integers or other NaturalNumbers.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-        - Yes. NaturalNumber is base 10, and we track that in a constant called
-          `RADIX`.
+      - Yes. NaturalNumber is base 10, and we track that in a constant called
+        `RADIX`.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
       - Yes. The kernel methods `multiplyBy10` and `divideBy10` can be used to
@@ -193,13 +204,14 @@ will likely refine your design to make your implementation easier to use.
 > Please use this section to share your designs.
 
 - Component Design #1: <!-- TODO: give component a name then delete this comment -->
+
   - **Description**:
     - <!-- TODO: describe your component then delete this comment -->
   - **Kernel Methods**:
     - <!-- TODO: list kernel methods then delete this comment -->
   - **Secondary Methods**:
     - <!-- TODO: list secondary methods then delete this comment -->
-  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+  - **Additional Considerations** (_note_: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
       - <!-- TODO: provide an argument then delete this comment -->
@@ -212,16 +224,16 @@ will likely refine your design to make your implementation easier to use.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
       - <!-- TODO: provide an argument then delete this comment -->
-
 
 - Component Design #2: <!-- TODO: give component a name then delete this comment -->
+
   - **Description**:
     - <!-- TODO: describe your component then delete this comment -->
   - **Kernel Methods**:
     - <!-- TODO: list kernel methods then delete this comment -->
   - **Secondary Methods**:
     - <!-- TODO: list secondary methods then delete this comment -->
-  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+  - **Additional Considerations** (_note_: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
       - <!-- TODO: provide an argument then delete this comment -->
@@ -234,7 +246,6 @@ will likely refine your design to make your implementation easier to use.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
       - <!-- TODO: provide an argument then delete this comment -->
-
 
 - Component Design #3: <!-- TODO: give component a name then delete this comment -->
   - **Description**:
@@ -243,7 +254,7 @@ will likely refine your design to make your implementation easier to use.
     - <!-- TODO: list kernel methods then delete this comment -->
   - **Secondary Methods**:
     - <!-- TODO: list secondary methods then delete this comment -->
-  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+  - **Additional Considerations** (_note_: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
       - <!-- TODO: provide an argument then delete this comment -->
